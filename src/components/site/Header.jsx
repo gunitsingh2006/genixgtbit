@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.jpeg"; // Update this path to the correct relative path
 
 
 const links = [
@@ -29,7 +30,7 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5 group">
-          <img src="/src/assets/logo.jpeg" alt="Genix" className="h-9 w-9 rounded-lg ring-1 ring-border group-hover:ring-teal transition" />
+          <img src={logo} alt="Genix" className="h-9 w-9 rounded-lg ring-1 ring-border group-hover:ring-teal transition" />
           <span className="font-display font-bold text-lg tracking-tight">GENIX</span>
         </Link>
 
@@ -49,9 +50,9 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Link to="/about" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal text-primary-foreground text-sm font-semibold hover:glow-teal transition-all hover:scale-[1.03]">
+          <a href="https://forms.gle/jzHw98Mi3QENpWfEA" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal text-primary-foreground text-sm font-semibold hover:glow-teal transition-all hover:scale-[1.03]">
             Join Genix
-          </Link>
+          </a>
         </div>
 
         <button className="md:hidden p-2 -mr-2" onClick={() => setOpen((o) => !o)} aria-label="Menu">

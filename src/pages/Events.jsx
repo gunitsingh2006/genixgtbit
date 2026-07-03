@@ -31,8 +31,8 @@ export default function Events() {
         </Reveal>
         <div className="grid md:grid-cols-2 gap-5">
           {[
-            { tag: "Workshop", title: "Intro to Full-Stack: from zero to deployed", when: "Coming soon", where: "GTBIT Campus" },
-            { tag: "Competition", title: "Genix Hack Night — 12-hour build sprint", when: "Coming soon", where: "GTBIT Campus" },
+            { tag: "Online-Event", title: "Sticker making competition for GENIX society", when: "Coming soon", where: "GTBIT Campus" ,"description": "Design. Create. Inspire. Join the GENIX Sticker Making Competition and turn your creativity into amazing sticker designs. Showcase your artistic skills, compete with fellow innovators, and make your mark! 🎨🚀" },
+            {  tag: "PitchX-GENIX", title: "PitchX", where: "GTBIT Campus" , "description": "Join us for an exciting pitch competition where startups showcase their ideas to a panel of industry experts." },
           ].map((e, i) => (
             <Reveal key={e.title} delay={i * 0.08}>
               <div className="group rounded-2xl border border-border p-7 hover:border-teal/60 hover:bg-card/50 transition h-full">
@@ -42,7 +42,7 @@ export default function Events() {
                   <span className="inline-flex items-center gap-1.5"><MapPin size={13} />{e.where}</span>
                 </div>
                 <h3 className="mt-5 text-2xl font-semibold group-hover:text-teal transition">{e.title}</h3>
-                <p className="mt-3 text-sm text-muted-foreground">[Short description of the event and what attendees will get out of it.]</p>
+                <p className="mt-3 text-sm text-muted-foreground">{e.description}</p>
                 <button className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-teal text-primary-foreground text-sm font-semibold hover:glow-teal transition">
                   RSVP <ArrowRight size={14} />
                 </button>
