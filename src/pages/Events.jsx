@@ -80,7 +80,7 @@ export default function Events() {
           </Reveal>
           <Reveal className="col-span-6 md:col-span-6" delay={0.12}>
             <figure className="rounded-2xl overflow-hidden border border-border">
-              <img src={event3} alt="Tech Debate group photo" className="w-full aspect-[21/9] object-cover" />
+              <img src={event3} alt="Tech Debate group photo" className="w-full aspect-[4/3] object-cover" />
               <figcaption className="p-4 text-sm text-muted-foreground bg-card">A full house — students, faculty, and organizers together.</figcaption>
             </figure>
           </Reveal>
@@ -90,8 +90,8 @@ export default function Events() {
           <div className="mt-10 grid sm:grid-cols-3 gap-4">
             {[
               { k: "80+", v: "Attendees" },
-              { k: "2 hrs", v: "Of debate" },
-              { k: "5 topics", v: "Argued live" },
+              { k: "4 hrs", v: "Of debate" },
+              { k: "10+ topics", v: "Argued live" },
             ].map((s) => (
               <div key={s.v} className="rounded-2xl border border-border p-6 bg-card/40">
                 <div className="text-3xl font-display font-bold text-teal">{s.k}</div>

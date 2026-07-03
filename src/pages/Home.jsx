@@ -176,7 +176,7 @@ export default function Home() {
             { tag: "PitchX-GENIX", title: "PitchX", when: "Coming soon", where: "GTBIT Campus" }
             // { tag: "Competition", title: "Genix Hack Night — 12-hour build sprint", when: "Coming soon" },
           ].map((e, i) => (
-            <a href="/events" key={e.title}>
+            <Link to="https://chat.whatsapp.com/IC4HlBTSZn13mcEIROUKZn" key={e.title} target="_blank" rel="noreferrer">
               <Reveal key={e.title} delay={i * 0.08}>
               <div className="group rounded-2xl border border-border p-7 hover:border-teal/60 hover:bg-card/50 transition">
                 <div className="flex items-center justify-between text-xs text-muted-foreground">
@@ -187,7 +187,7 @@ export default function Home() {
                 <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal">RSVP <ArrowRight size={14} /></div>
               </div>
             </Reveal>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

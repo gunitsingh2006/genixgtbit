@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Mail } from "lucide-react";
-
+import logo from "@/assets/logo.jpeg"; 
 
 export function Footer() {
   return (

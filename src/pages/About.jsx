@@ -91,7 +91,7 @@ export default function About() {
               <a href="https://www.instagram.com/genix.gtbit" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-teal text-primary-foreground font-semibold hover:glow-teal transition">
                 📸 @genix.gtbit
               </a>
-              <a href="#" className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-border hover:border-teal hover:text-teal font-semibold transition">
+              <a href="https://www.linkedin.com/company/genix-gtbit" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-border hover:border-teal hover:text-teal font-semibold transition">
                 💼 LinkedIn
               </a>
             </div>
