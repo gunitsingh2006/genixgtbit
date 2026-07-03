@@ -58,6 +58,10 @@ export default function Home() {
                 <Link to="/events" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-border hover:border-teal hover:text-teal font-semibold transition">
                   Explore Events
                 </Link>
+                <a href="https://chat.whatsapp.com/IC4HlBTSZn13mcEIROUKZn" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-teal text-primary-foreground font-semibold hover:glow-teal transition-all hover:scale-[1.02]">
+                  Genix WhatsApp
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </a>
               </div>
             </Reveal>
             <Reveal delay={0.2}>

@@ -43,9 +43,9 @@ export default function Events() {
                 </div>
                 <h3 className="mt-5 text-2xl font-semibold group-hover:text-teal transition">{e.title}</h3>
                 <p className="mt-3 text-sm text-muted-foreground">{e.description}</p>
-                <button className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-teal text-primary-foreground text-sm font-semibold hover:glow-teal transition">
+                <a href="https://chat.whatsapp.com/IC4HlBTSZn13mcEIROUKZn" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-teal text-primary-foreground text-sm font-semibold hover:glow-teal transition">
                   RSVP <ArrowRight size={14} />
-                </button>
+                </a>
               </div>
             </Reveal>
           ))}
