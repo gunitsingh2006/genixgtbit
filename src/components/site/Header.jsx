@@ -1,0 +1,78 @@
+import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+
+
+const links = [
+  { to: "/", label: "Home" },
+  { to: "/events", label: "Events" },
+  { to: "/team", label: "Team" },
+  { to: "/about", label: "About" },
+];
+
+export function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        scrolled ? "backdrop-blur-xl bg-background/70 border-b border-border" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-2.5 group">
+          <img src="/src/assets/logo.jpeg" alt="Genix" className="h-9 w-9 rounded-lg ring-1 ring-border group-hover:ring-teal transition" />
+          <span className="font-display font-bold text-lg tracking-tight">GENIX</span>
+        </Link>
+
+        <nav className="hidden md:flex items-center gap-8">
+          {links.map((l) => (
+            <NavLink
+              key={l.to}
+              to={l.to}
+              end={l.to === "/"}
+              className={({ isActive }) =>
+                `text-sm transition-colors relative ${isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`
+              }
+            >
+              {l.label}
+            </NavLink>
+          ))}
+        </nav>
+
+        <div className="hidden md:block">
+          <Link to="/about" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal text-primary-foreground text-sm font-semibold hover:glow-teal transition-all hover:scale-[1.03]">
+            Join Genix
+          </Link>
+        </div>
+
+        <button className="md:hidden p-2 -mr-2" onClick={() => setOpen((o) => !o)} aria-label="Menu">
+          {open ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </div>
+
+      {open && (
+        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+          <div className="px-5 py-4 flex flex-col gap-3">
+            {links.map((l) => (
+              <Link key={l.to} to={l.to} className="py-2 text-base" onClick={() => setOpen(false)}>
+                {l.label}
+              </Link>
+            ))}
+            <Link to="/about" className="mt-2 inline-flex justify-center items-center px-4 py-2.5 rounded-full bg-teal text-primary-foreground font-semibold" onClick={() => setOpen(false)}>
+              Join Genix
+            </Link>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}
