@@ -2,15 +2,17 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Users, Trophy, Rocket, Share2, Calendar, Instagram } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
-import genixImg from "@/assets/genix.jpeg";
-import event1 from "@/assets/event1.jpeg";
-import event2 from "@/assets/event2.jpeg";
-import event3 from "@/assets/event3.jpeg";
-import event4 from "@/assets/event4.jpeg";
-import gunitImg from "@/assets/gunit.jpeg";
-import gurnoorImg from "@/assets/gurnoor.jpeg";
-import jasnoorImg from "@/assets/jasnoor.jpeg";
-import agamjotImg from "@/assets/agamjot.jpeg";
+import { PageMeta } from "@/components/site/PageMeta";
+import { LazyImg } from "@/components/site/LazyImg";
+import genixImg from "@/assets/genix.webp";
+import event1 from "@/assets/event1.webp";
+import event2 from "@/assets/event2.webp";
+import event3 from "@/assets/event3.webp";
+import event4 from "@/assets/event4.webp";
+import gunitImg from "@/assets/gunit.webp";
+import gurnoorImg from "@/assets/gurnoor.webp";
+import jasnoorImg from "@/assets/jasnoor.webp";
+import agamjotImg from "@/assets/agamjot.webp";
 
 
 const benefits = [
@@ -23,6 +25,10 @@ const benefits = [
 export default function Home() {
   return (
     <div>
+      <PageMeta
+        title="Genix — GTBIT's Official Tech Society"
+        description="Genix is the student-run tech society of GTBIT — workshops, tech debates, hackathons and a community of builders. Join us."
+      />
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
@@ -58,9 +64,8 @@ export default function Home() {
                 <Link to="/events" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-border hover:border-teal hover:text-teal font-semibold transition">
                   Explore Events
                 </Link>
-                <a href="https://chat.whatsapp.com/IC4HlBTSZn13mcEIROUKZn" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-teal text-primary-foreground font-semibold hover:glow-teal transition-all hover:scale-[1.02]">
+                <a href="https://chat.whatsapp.com/IC4HlBTSZn13mcEIROUKZn" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-border hover:border-teal hover:text-teal font-semibold transition">
                   Genix WhatsApp
-                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </Reveal>
@@ -83,7 +88,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 rounded-4xl gradient-brand opacity-30 blur-3xl" />
               <div className="relative h-full w-full rounded-4xl border border-border bg-card/60 backdrop-blur-xl p-10 flex items-center justify-center glow-teal">
-                <img src={genixImg} alt="Genix" className="w-full h-full object-contain drop-shadow-2xl" />
+                <LazyImg src={genixImg} alt="Genix" className="w-full h-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
           </Reveal>
@@ -271,9 +276,9 @@ export default function Home() {
             <p className="mt-5 text-lg text-muted-foreground max-w-xl mx-auto">
               First-years, second-years, seniors — if you build, argue, or just love tech, we want you in.
             </p>
-            <Link to="/about" className="mt-8 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-teal text-primary-foreground font-bold text-lg hover:glow-teal transition hover:scale-[1.03]">
+            <a href="https://forms.gle/jzHw98Mi3QENpWfEA" target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-teal text-primary-foreground font-bold text-lg hover:glow-teal transition hover:scale-[1.03]">
               Join Now <ArrowRight />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

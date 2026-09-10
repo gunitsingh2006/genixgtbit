@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Code2, MessageSquare, Mic, Users } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
-import event1 from "@/assets/event1.jpeg";
-import event2 from "@/assets/event2.jpeg";
-import event3 from "@/assets/event3.jpeg";
-import event4 from "@/assets/event4.jpeg";
+import { PageMeta } from "@/components/site/PageMeta";
+import event1 from "@/assets/event1.webp";
+import event2 from "@/assets/event2.webp";
+import event3 from "@/assets/event3.webp";
+import event4 from "@/assets/event4.webp";
 
 const activities = [
   { icon: Code2, title: "Workshops", copy: "Hands-on sessions on the tools students actually want to learn." },
@@ -16,6 +17,10 @@ const activities = [
 export default function About() {
   return (
     <div>
+      <PageMeta
+        title="About — Genix · GTBIT Tech Society"
+        description="Learn about Genix — GTBIT's student-run tech society. Our mission, what we do, and how to get involved."
+      />
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0 grid-bg opacity-30" />

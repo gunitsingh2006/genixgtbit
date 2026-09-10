@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
-import gunitImg from "@/assets/gunit.jpeg";
-import gurnoorImg from "@/assets/gurnoor.jpeg";
-import jasnoorImg from "@/assets/jasnoor.jpeg";
-import agamjotImg from "@/assets/agamjot.jpeg";
+import { PageMeta } from "@/components/site/PageMeta";
+import gunitImg from "@/assets/gunit.webp";
+import gurnoorImg from "@/assets/gurnoor.webp";
+import jasnoorImg from "@/assets/jasnoor.webp";
+import agamjotImg from "@/assets/agamjot.webp";
 
 const team = [
   { name: "Gunit Singh", role: "President", img: gunitImg, quote: "Ideas beat titles. Ship the thing." },
@@ -17,6 +18,10 @@ const team = [
 export default function Team() {
   return (
     <div>
+      <PageMeta
+        title="Team — Genix · GTBIT Tech Society"
+        description="Meet the core team behind Genix — the students running events, workshops, and everything at GTBIT's official tech society."
+      />
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0 grid-bg opacity-30" />
