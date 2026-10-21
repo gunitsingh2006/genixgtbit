@@ -11,7 +11,6 @@ import event3 from "@/assets/event3.webp";
 import event4 from "@/assets/event4.webp";
 import gunitImg from "@/assets/gunit.webp";
 import gurnoorImg from "@/assets/gurnoor.webp";
-import jasnoorImg from "@/assets/jasnoor.webp";
 import agamjotImg from "@/assets/agamjot.webp";
 
 
@@ -216,7 +215,7 @@ export default function Home() {
           {[
             { name: "Gunit Singh", role: "President", img: gunitImg },
             { name: "Gurnoor Singh", role: "Vice President", img: gurnoorImg },
-            { name: "Jasnoor Kaur", role: "Head of Operations", img: jasnoorImg },
+    
             { name: "Agamjot Singh", role: "Executive Director", img: agamjotImg },
           ].map((m, i) => (
             <Reveal key={m.name} delay={i * 0.05}>
