@@ -5,13 +5,11 @@ import { Reveal } from "@/components/site/Reveal";
 import { PageMeta } from "@/components/site/PageMeta";
 import gunitImg from "@/assets/gunit.webp";
 import gurnoorImg from "@/assets/gurnoor.webp";
-import jasnoorImg from "@/assets/jasnoor.webp";
 import agamjotImg from "@/assets/agamjot.webp";
 
 const team = [
   { name: "Gunit Singh", role: "President", img: gunitImg, quote: "Ideas beat titles. Ship the thing." },
   { name: "Gurnoor Singh", role: "Vice President", img: gurnoorImg, quote: "Build hard, stay curious." },
-  { name: "Jasnoor Kaur", role: "Head of Operations", img: jasnoorImg, quote: "Great events are 90% details." },
   { name: "Agamjot Singh", role: "Executive Director", img: agamjotImg, quote: "The best community learns loud." },
 ];
 
