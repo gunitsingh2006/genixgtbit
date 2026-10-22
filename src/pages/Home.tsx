@@ -12,6 +12,8 @@ import event4 from "@/assets/event4.webp";
 import gunitImg from "@/assets/gunit.webp";
 import gurnoorImg from "@/assets/gurnoor.webp";
 import agamjotImg from "@/assets/agamjot.webp";
+import harsimranImg from "@/assets/harsimran.webp";
+import kaarajImg from "@/assets/kaaraj.webp";
 
 
 const benefits = [
@@ -217,6 +219,8 @@ export default function Home() {
             { name: "Gurnoor Singh", role: "Vice President", img: gurnoorImg },
     
             { name: "Agamjot Singh", role: "Executive Director", img: agamjotImg },
+            { name: "Harsimran Kaur", role: "Strategic Lead", img: harsimranImg, quote: "Optimism is the foundation of success." },
+              { name: "Kaarajdeep Kaur", role: "Event Head", img: kaarajImg, quote: "Most events are better with a good team." },
           ].map((m, i) => (
             <Reveal key={m.name} delay={i * 0.05}>
               <div className="group rounded-2xl overflow-hidden border border-border bg-card">
