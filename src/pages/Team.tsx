@@ -13,7 +13,7 @@ const team = [
   { name: "Gunit Singh", role: "President", img: gunitImg, quote: "Ideas beat titles. Ship the thing." },
   { name: "Gurnoor Singh", role: "Vice President", img: gurnoorImg, quote: "Build hard, stay curious." },
   { name: "Agamjot Singh", role: "Executive Director", img: agamjotImg, quote: "The best community learns loud." },
-  { name: "Harsimran Kaur", role: "Strategic Lead", img: harsimranImg, quote: "Optimism is the foundation of success." },
+  { name: "Harsimran Kaur", role: "Strategic Head", img: harsimranImg, quote: "Optimism is the foundation of success." },
   { name: "Kaarajdeep Kaur", role: "Event Head", img: kaarajImg, quote: "Most events are better with a good team." },
 ];
 

@@ -219,7 +219,7 @@ export default function Home() {
             { name: "Gurnoor Singh", role: "Vice President", img: gurnoorImg },
     
             { name: "Agamjot Singh", role: "Executive Director", img: agamjotImg },
-            { name: "Harsimran Kaur", role: "Strategic Lead", img: harsimranImg, quote: "Optimism is the foundation of success." },
+            { name: "Harsimran Kaur", role: "Strategic Head", img: harsimranImg, quote: "Optimism is the foundation of success." },
               { name: "Kaarajdeep Kaur", role: "Event Head", img: kaarajImg, quote: "Most events are better with a good team." },
           ].map((m, i) => (
             <Reveal key={m.name} delay={i * 0.05}>
